@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#restaurant-list, #order-summary {
+    margin-top: 1rem;
+}
+
+.restaurant, .order-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	display: flex;
+    align-items: center;
+}
+
+.restaurant img {
+    width: 300px; 
+    height: 170px; 
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.restaurant div {
+    flex: 1;
+    text-align: right;
+}
+
+.restaurant h3, .restaurant p, .restaurant a {
+    margin: 0.5rem 0;
+}
+
+.restaurant a {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.delivery-price {
+    color: red;
+    font-weight: bold;
+}
+
+#order {
+    margin-bottom: 5rem; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form select, form button {
+    margin-bottom: 0.5rem;
+}

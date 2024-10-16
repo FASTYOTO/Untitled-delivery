@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNTITLED Delivery</title>
+    <link href="C:\Users\User\OneDrive\Bureau\untitled deliv\delivery.css" rel="stylesheet" href="styles.css">
+	<script src="Delivery.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="UNTITLED DELIVERY.png" width="300px" length="900px">
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenue sur UNTITLED Delivery</h2>
+            <p>Votre service de livraison dans les environs de Bastogne.</p>
+        </section>
+        <section id="restaurants">
+            <h2>Nos Restaurants Partenaires</h2>
+            <input type="text" id="search" placeholder="Rechercher un restaurant...">
+            <div id="restaurant-list">
+            </div>
+        </section>
+		<section id="order">
+            <h2>Passer une commande</h2>
+            <form id="order-form">
+                <label for="restaurant">Restaurant:</label>
+                <select id="restaurant" name="restaurant">
+                </select>
+                <label for="dish">Plat (+ precision):</label>
+                <input type="text" id="dish" name="dish" required>
+                <label for="quantity">Quantite:</label>
+                <input type="number" id="quantity" name="quantity" required>
+				<label for="address">Adresse:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="phone">Numero de telephone:</label>
+                <input type="tel" id="phone" name="phone" required>
+				<label for="email">Adresse email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Commander</button>
+            </form>
+            <div id="order-summary">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 UNTITLED Delivery. Tous droits reserves.</p>
+		<p>Contactez-nous : <a href="tel:+32476628416">+32 476 62 84 16</a></p>
+    </footer>
+</body>
+</html>
